@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.ai_powered_hms_backend.identity.application.command.CreateRoleCommand;
-import com.ai_powered_hms_backend.identity.application.port.in.CreateRoleUserCase;
+import com.ai_powered_hms_backend.identity.application.port.in.CreateRoleUseCase;
 import com.ai_powered_hms_backend.identity.application.port.out.PermissionRepository;
 import com.ai_powered_hms_backend.identity.application.port.out.RoleRepository;
 import com.ai_powered_hms_backend.identity.domain.model.Permission;
@@ -15,7 +15,7 @@ import com.ai_powered_hms_backend.identity.domain.model.Role;
 import com.ai_powered_hms_backend.shared_kernel.ids.RoleId;
 
 @Service
-public class CreateRoleService implements CreateRoleUserCase {
+public class CreateRoleService implements CreateRoleUseCase {
 
 	private final RoleRepository roleRepository;
 	private final PermissionRepository permissionRepository;
