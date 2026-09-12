@@ -7,6 +7,7 @@
 			"shared_kernel :: persistence",
 			"shared_kernel :: security",
 			"shared_kernel :: exceptions",
+			"shared_kernel :: rest",
 			"staff :: api"
 		}
 )
